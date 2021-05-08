@@ -32,6 +32,11 @@ const config: MenuEntry[] = [
     href: 'http://anoswap.finance/pools'
   },
   {
+    label: 'Jungles',
+    icon: 'PoolIcon',
+    href: 'http://anoswap.finance/jungles',
+  },
+  {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: 'http://anoswap.finance/lottery'
