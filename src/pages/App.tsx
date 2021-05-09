@@ -82,21 +82,21 @@ export default function App() {
   //
   // const stringTranslationsApi = new StringTranslations(credentials)
   //
-  // const getStoredLang = (storedLangCode: string) => {
-  //   return allLanguages.filter(language => {
-  //     return language.code === storedLangCode
-  //   })[0]
-  // }
+  const getStoredLang = (storedLangCode: string) => {
+    return allLanguages.filter(language => {
+      return language.code === storedLangCode
+    })[0]
+  }
 
-  // useEffect(() => {
-  //   const storedLangCode = localStorage.getItem('pancakeSwapLanguage')
-  //   if (storedLangCode) {
-  //     const storedLang = getStoredLang(storedLangCode)
-  //     setSelectedLanguage(storedLang)
-  //   } else {
-  //     setSelectedLanguage(EN)
-  //   }
-  // }, [])
+  useEffect(() => {
+    const storedLangCode = localStorage.getItem('pancakeSwapLanguage')
+    if (storedLangCode) {
+      const storedLang = getStoredLang(storedLangCode)
+      setSelectedLanguage(storedLang)
+    } else {
+      setSelectedLanguage(EN)
+    }
+  }, [])
   //
   // const fetchTranslationsForSelectedLanguage = async () => {
   //   stringTranslationsApi
