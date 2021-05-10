@@ -2755,7 +2755,7 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@anoswap/uikit":
+"@pancakeswap-libs/uikit@github:anoswap/uikit":
   version "0.10.2"
   resolved "https://codeload.github.com/anoswap/uikit/tar.gz/5218a3d8d9d15f03b18b3e29600084d0211ffadc"
   dependencies:
